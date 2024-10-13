@@ -38,7 +38,9 @@ function wordcount_load_textdomain(){
         $strip_content = strip_tags($content);
         $wordn= str_word_count($strip_content);
         $label = __("Toal Number Of Word", "word-count");
-        $content .= sprintf('<h2>%s: %s</h2>', $label, $wordn);
+        $label = apply_filters('wordcount_heading', $label);
+        $tag = apply_filters('wordcount_tag', 'h2');
+        $content .= sprintf('<%s>%s: %s</%s>',$tag, $label, $wordn, $tag);
         return  $content;
    }
    add_filter('the_content', 'wordcount_count_words');
