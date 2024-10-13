@@ -1,4 +1,23 @@
+
+
+--------------------------------------------------------------
+
+The sprintf() function in PHP returns a formatted string using placeholders. It allows you to format numbers, strings, and other values into a specific output. Here's an example:
+
+php
+Copy code
+$name = "John";
+$age = 25;
+echo sprintf("My name is %s and I am %d years old.", $name, $age);
+// Outputs: My name is John and I am 25 years old.
+In this case:
+
+%s is a placeholder for a string.
+%d is a placeholder for an integer.
 --------------------------------------------------------
+
+The strip_tags() function in PHP removes HTML and PHP tags from a string. This is useful for cleaning input or output to ensure that no unwanted tags or scripts are rendered.
+---------------------------------------------------------
 the_content is a filter hook in WordPress that modifies the content of a post before it's displayed on the screen. Essentially, it lets you add, change, or remove content programmatically, just before it's outputted to users.
 =========================================================
 load_plugin_textdomain() function is used to load your plugin's translated strings, allowing it to be fully localized and translated into different languages.

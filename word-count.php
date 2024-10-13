@@ -35,7 +35,10 @@ function wordcount_load_textdomain(){
 
 
    function wordcount_count_words($content){
-        $wordn= str_word_count($content);
-        return  $wordn;
+        $strip_content = strip_tags($content);
+        $wordn= str_word_count($strip_content);
+        $label = __("Toal Number Of Word", "word-count");
+        $content .= sprintf('<h2>%s: %s</h2>', $label, $wordn);
+        return  $content;
    }
    add_filter('the_content', 'wordcount_count_words');
