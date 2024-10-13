@@ -32,3 +32,11 @@ function wordcount_load_textdomain(){
     load_plugin_textdomain('word-count', false, dirname(__FILE__ . "/languages/"));
 }
    add_action("plugins_loaded", "wordcount_load_textdomain");
+
+
+   function wordcount_count_words($content){
+       $text = "Hello tnavir " . $content;
+    //    return '';
+        return  $text;
+   }
+   add_filter('the_content', 'wordcount_count_words');

@@ -1,3 +1,5 @@
+--------------------------------------------------------
+the_content is a filter hook in WordPress that modifies the content of a post before it's displayed on the screen. Essentially, it lets you add, change, or remove content programmatically, just before it's outputted to users.
 =========================================================
 load_plugin_textdomain() function is used to load your plugin's translated strings, allowing it to be fully localized and translated into different languages.
 
