@@ -1,2 +1,10 @@
+=========================================================
+load_plugin_textdomain() function is used to load your plugin's translated strings, allowing it to be fully localized and translated into different languages.
+
+load_plugin_textdomain('word-count', false, dirname(__FILE__ . "/languages/"));
+'word-count' is the text domain that your plugin uses.
+false specifies that the plugin isn't in the WP_PLUGIN_DIR.
+dirname(__FILE__) . "/languages/" points to the directory where your translation files are stored.
+=========================================================
 every plugin has two hook,
-one is activation hook & other is deactivation hook.    
+one is activation hook & other is deactivation hook.        
