@@ -35,8 +35,7 @@ function wordcount_load_textdomain(){
 
 
    function wordcount_count_words($content){
-       $text = "Hello tnavir " . $content;
-    //    return '';
-        return  $text;
+        $wordn= str_word_count($content);
+        return  $wordn;
    }
    add_filter('the_content', 'wordcount_count_words');
