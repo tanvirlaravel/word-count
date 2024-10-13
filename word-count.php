@@ -11,3 +11,18 @@
  * Domain Path: /languages/
  */
 
+ /**
+  * Run after the plugin is activated
+  */
+  function wordcount_activation_hook(){}
+
+  /**
+   * Run after the plugin is deactivated
+   */
+  function wrodcount_deactivation_hook(){
+      
+  }
+  
+  
+   register_activation_hook(__FILE__, "wordcount_activation_hook");
+   register_deactivation_hook(__FILE__, "wrodcount_deactivation_hook");

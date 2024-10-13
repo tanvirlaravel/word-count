@@ -1,2 +1,2 @@
 every plugin has two hook,
-one is activation hook & other is deactivation hook.
+one is activation hook & other is deactivation hook.    
